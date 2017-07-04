@@ -1,3 +1,3 @@
 ## Useful Scripts
 
-Little helpers written in bash, sh and python.
+Helper scripts written in bash, sh and python.
