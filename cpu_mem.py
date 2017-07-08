@@ -6,7 +6,8 @@
 
 from __future__ import print_function
 import psutil
-from time import sleep
+#from time import sleep
+import time
 from screen_clear import clear
 
 clear()
@@ -16,16 +17,16 @@ duration = int(input("Select an interval from 5 to 30 seconds: "))
 clear()
 
 while(True):
-    if duration > 1 and duration < 10:
+    if duration > 4 and duration < 31:
         # get the system performance data:
         cpuPercent = psutil.cpu_percent(interval=duration)
         ramPercent = psutil.virtual_memory().percent
-        print(counter + 1, ":", end="")
-        sleep(2)
+        print("{0}: ".format(counter + 1), end="")
+        time.sleep(0.25)
         print ("CPU = {0}%  RAM = {1}%".format(cpuPercent, ramPercent))
         counter += 1
 else:
     print("select only 5 to 30 seconds!")
-    sleep(2)
+    time.sleep(2)
     clear()
 
