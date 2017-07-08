@@ -6,8 +6,7 @@
 
 from __future__ import print_function
 import psutil
-#from time import sleep
-import time
+from time import sleep
 from screen_clear import clear
 
 clear()
@@ -22,11 +21,11 @@ while(True):
         cpuPercent = psutil.cpu_percent(interval=duration)
         ramPercent = psutil.virtual_memory().percent
         print("{0}: ".format(counter + 1), end="")
-        time.sleep(0.25)
+        sleep(0.25)
         print ("CPU = {0}%  RAM = {1}%".format(cpuPercent, ramPercent))
         counter += 1
 else:
     print("select only 5 to 30 seconds!")
-    time.sleep(2)
+    sleep(2)
     clear()
 
