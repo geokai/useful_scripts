@@ -24,7 +24,7 @@ while(True):
         sleep(0.25)
         print ("CPU = {0}%  RAM = {1}%".format(cpuPercent, ramPercent))
         counter += 1
-        if counter > duration:
+        if counter == duration:
             counter = 0
 else:
     print("select only 5 to 30 seconds!")
