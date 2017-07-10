@@ -8,9 +8,13 @@ from __future__ import print_function
 import psutil
 from time import sleep
 from screen_clear import clear
+import sys
 
 clear()
 counter = 0
+
+def buf_flush():
+    sys.stdout.flush()
 
 duration = int(input("Select an interval from 1 to 30 seconds: "))
 clear()
@@ -21,8 +25,10 @@ while(True):
         cpuPercent = psutil.cpu_percent(interval=duration)
         ramPercent = psutil.virtual_memory().percent
         print("{0}/{1}: ".format(duration, (counter + 1)), end="")
+        buf_flush()
         sleep(0.5)
         print ("CPU = {0}%  RAM = {1}%".format(cpuPercent, ramPercent))
+        buf_flush()
         counter += 1
         if counter == duration:
             counter = 0
