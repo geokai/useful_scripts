@@ -29,6 +29,7 @@ while(True):
         sleep(0.5)
         print ("CPU = {0}%  RAM = {1}%".format(cpuPercent, ramPercent))
         buf_flush()
+        sleep(0.5)
         counter += 1
         if counter == duration:
             counter = 0
