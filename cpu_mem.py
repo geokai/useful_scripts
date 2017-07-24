@@ -24,11 +24,13 @@ while(True):
         # get the system performance data:
         cpuPercent = psutil.cpu_percent(interval=duration)
         ramPercent = psutil.virtual_memory().percent
+        print()
         print("{0}/{1}: ".format(duration, (counter + 1)), end="")
         buf_flush()
         sleep(0.5)
-        print ("CPU = {0}%  RAM = {1}%".format(cpuPercent, ramPercent))
+        print ("CPU = {0}%  RAM = {1}% ".format(cpuPercent, ramPercent), end='')
         buf_flush()
+        sleep(0.5)
         counter += 1
         if counter == duration:
             counter = 0

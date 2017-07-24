@@ -6,6 +6,10 @@
 import os
 
 def clear():
+    """
+        Determines the os of the system and performs the appropriate
+        clear scroll-back
+    """
     osname = os.name
     if osname == 'posix':
         os.system('clear')
