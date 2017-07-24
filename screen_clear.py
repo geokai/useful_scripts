@@ -1,9 +1,7 @@
+"""This module performs a screen clear"""
 # This file was created on 07/07/2017
 # Author: George Kaimakis
 
-
-# this module determines the operating system type and provides the
-# appropriate terminal scroll-back clearing (screen clear):
 
 import os
 
@@ -19,4 +17,3 @@ def clear():
 
 if __name__ == "__main__":
     clear()
-
