@@ -6,10 +6,8 @@
 import os
 
 def clear():
-    """
-        Determines the os of the system and performs the appropriate
-        clear scroll-back
-    """
+    """Determines the os and performs the appropriate screen clear"""
+
     osname = os.name
     if osname == 'posix':
         os.system('clear')
