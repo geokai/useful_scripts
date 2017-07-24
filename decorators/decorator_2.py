@@ -2,7 +2,9 @@
 
 
 def info(func):
+    """Decorator function"""
     def wrapper(*args):
+        """Decorator wrapper - the actual decorator"""
         print('Function name: ' + func.__name__)
         print('Function docstring: ' + str(func.__doc__))
         return func(*args)

@@ -2,12 +2,14 @@
 
 
 def info(arg1, arg2):
+    """Info func passes arguments"""
     print('Decorator arg1 = ' + str(arg1))
     print('Decorator arg2 = ' + str(arg2))
 
     def the_real_decorator(function):
-
+        """Decorator function"""
         def wrapper(*args, **kwargs):
+            """Decorator wrapper - the actual decorator"""
             print('S: Function {} args: {} kwargs: {}'.format(
                 function.__name__, str(args), str(kwargs)))
             return function(*args, **kwargs)
@@ -34,4 +36,3 @@ print('3: {}'.format(actual_decorator(6)))
 
 # print('space')
 # print(decorator(5))
-

@@ -20,13 +20,14 @@ print()
 # the decorator:
 
 def info(func):
+    """Decorator function"""
     def wrapper(*args):
+        """Decorator wrapper - the actual decorator"""
         print('Function name: ' + func.__name__)
         print('Function docstring: ' + str(func.__doc__))
         return func(*args)
     return wrapper
 
 my_dec_dblr = info(doubler)
-print(my_dec_dblr (2))
+print(my_dec_dblr(2))
 print()
-
