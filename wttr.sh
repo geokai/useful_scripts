@@ -18,6 +18,6 @@ do
     echo $counter;
     date
     curl wttr.in/$1
-    sleep 900;
+    sleep 1800;
     counter=$((counter + 1));
 done
