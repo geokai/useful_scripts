@@ -21,8 +21,7 @@ DURATION = int(input("Select an interval from 1 to 30 seconds: "))
 clear()
 while True:
     if DURATION > 0 and DURATION < 31:
-        # get the system performance data:
-        cpuPercent = psutil.cpu_percent(interval=DURATION)
+        cpuPercent = psutil.cpu_percent(interval=0)
         ramPercent = psutil.virtual_memory().percent
         print()
         print("{0}/{1}: ".format(DURATION, (COUNTER + 1)), end="")
@@ -30,7 +29,8 @@ while True:
         sleep(0.5)
         print("CPU = {0}%  RAM = {1}% ".format(cpuPercent, ramPercent), end='')
         buf_flush()
-        sleep(0.5)
+        # sleep(0.5)
+        sleep(DURATION)
         COUNTER += 1
         if COUNTER == DURATION:
             COUNTER = 0
