@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-""" 
+"""
     This script gets the temperature reading from a system file and prints it to
     screen
 """
