@@ -12,9 +12,11 @@ from screen_clear import clear
 
 clear()
 
+
 def buf_flush():
     """Flushes the stdout buffer."""
     sys.stdout.flush()
+
 
 COUNTER = 0
 DURATION = int(input("Select an interval from 1 to 30 seconds: "))
