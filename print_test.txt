@@ -1,0 +1,29 @@
+greenbar print test line 1
+new greenbar print line
+another greenbar line to print
+line 4 for greenbar printing
+yet another greenbar line
+more greenbar printing
+ok, one more line then
+two more lines now
+hello from cat
+this is live greenbar printing
+I have cat constantly feeding this file
+redirecting into print_test.txt
+It's like a poor mans messenger app
+updates just happen
+greenbar is very suited to this kind of output
+piping 'ls' commands didn't really work
+I'd need to do more research into how to make it work better
+this very retro looking
+just like an old crt screen from a by-gone era
+hello there
+this is a new line
+I am finding great new commands
+very interesting
+the greenbar lines alternate
+end of transmittion
+good-bye
+ok, I'm back
+I have so much more to say
+while true, do this
