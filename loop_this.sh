@@ -6,12 +6,15 @@
 # This script runs a simple while loop in terms of the resource ($1) and the
 # interval in seconds ($2):
 
+source ~/bin/local/greenbar2.sh
+tput civis
+
 item=$1
 interval=$2
 
 while :
     do
         clear
-        $item
+        $item | greenbar2
         sleep $interval
     done
