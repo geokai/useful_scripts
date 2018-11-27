@@ -7,7 +7,8 @@
 # interval in seconds ($2):
 
 source ~/bin/local/greenbar2.sh
-tput civis
+trap 'tput cnorm; ' EXIT  # reset cursor
+tput civis  # hide cursor
 
 item=$1
 interval=$2
