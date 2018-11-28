@@ -10,14 +10,14 @@
 # This file was created on 27/06/2017
 # Author: George Kaimakis
 
-counter=0
+counter=1
 
 while :
 do
     clear;
-    echo $counter;
+    printf "$counter\n";
     date
     curl wttr.in/$1
-    sleep 1800;
+    sleep 3600;
     counter=$((counter + 1));
 done
