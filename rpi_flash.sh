@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# A simple shell script anumation using figlet, toilet and tr to create a
+# A simple shell script animation using figlet, toilet and tr to create a
 # colorful flashing text object
 
 text="happy\n  RPi   \nweek"

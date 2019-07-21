@@ -10,6 +10,10 @@
 # This file was created on 27/06/2017
 # Author: George Kaimakis
 
+# configure curosr visibility
+trap 'tput cnorm; ' EXIT  # reset cursor on EXIT
+tput civis  # hide cursor
+
 counter=1
 
 while :
