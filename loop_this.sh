@@ -61,8 +61,8 @@ _warning.warning () {
 
 # prints the command being run and the delay value at the head of the terminal
 _header () {
-    echo -en "${INFO}cmd${RESET}: ${item}\n"
-    echo -e "${INFO}int${RESET}: ${interval:-$default_interval}s\n"
+    echo -en "${SUCCESS}cmd${RESET}: ${item}\n"
+    echo -e "${SUCCESS}int${RESET}: ${interval:-$default_interval}s\n"
 }
 
 
@@ -80,6 +80,9 @@ _delay_interval_clamp () {
 # configure curosr visibility
 trap 'tput cnorm; ' EXIT  # reset cursor on EXIT
 tput civis  # hide cursor
+
+# configure a clean interupt and exit
+trap 'exit' 15
 
 
 # configure the command loop with or without the greenbar background

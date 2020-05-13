@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # this function re-formats the output of any stream of text
 # resulting in alternating light and dark green background
 # similar to the old-school computer print paper
