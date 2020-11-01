@@ -62,3 +62,7 @@ venv
 
 # vim swap files
 .*.swp
+
+# misc
+*.txt
+

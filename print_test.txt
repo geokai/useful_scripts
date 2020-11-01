@@ -25,5 +25,5 @@ the greenbar lines alternate
 end of transmittion
 good-bye
 ok, I'm back
-I have so much more to say
+I have so much more to relay
 while true, do this
