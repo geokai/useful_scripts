@@ -1,0 +1,17 @@
+#!/bin/bash
+
+
+pidof dunst && killall dunst
+dunst &
+
+notify-send " " "message one
+just for testing"
+
+msg="<span foreground='#ffe000' font='Monospace 42'>YOLO 😀 </span>"
+
+notify-send -u normal "hello" "$msg"
+notify-send -u normal " " "<span color='darkblue' font='monospace 20'>message two</span>"
+notify-send "summary three" "<span font='mono 20'>message three</span>"
+notify-send "s:four" "message four"
+notify-send "s:five" "message five"
+notify-send -u normal "s:six" "message six"
